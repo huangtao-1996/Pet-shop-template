@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+a:link{color: #000;}
+a:visited{color: #000;}
+header{
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 0 0 5px 0;
+}
+.logo{
+    width: 300px;
+    height: 150px;
+}
+nav{
+    height: 150px;
+    color: #000;
+}
+nav a:hover{
+    color: #979292;
+}
+.text{
+    width: 200px;
+    height: 800px;
+
+}
+.search{
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    margin: 0 40px;
+    line-height: 154px;
+    text-align: center;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+
+main{
+    margin-top: 20px;
+}
+/* 轮播图 */
+.wrap{
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+.list{
+    list-style: none;
+    width: 1300px;
+    height: 600px;
+}
+.item{
+    position: absolute;
+    width: 1300px;
+    height: 600px;
+}
+.item_a{
+    width: 1300px;
+    height: 600px;
+    display: block;
+
+}
+.item:nth-child(1){
+    background: url(../image/img2.jpg) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.item:nth-child(2){
+    background: url(../image/img4.jpg);
+    background-size: 100% 100%;
+}
+.item:nth-child(3){
+    background: url(../image/img3.jpg);
+    background-size: 100% 100%;
+}
+.item:nth-child(4){
+    background: url(../image/img5.jpg);
+    background-size: 100% 100%;
+}
+.item:nth-child(5){
+    background: url(../image/img6.jpg);
+    background-size: 100% 100%;
+}
+.item:nth-child(6){
+    background: url(../image/img1.jpg);
+    background-size: 100% 100%;
+}
+.active{
+    z-index: 2;
+}
+
+
+.btn{
+    position: absolute;
+    top: 240px;
+    width: 41px;
+    height: 69px;
+    z-index: 6;
+}
+#goPro{
+    left: 0px;
+}
+#goNext{
+    right: 0;
+}
+.pointlist{
+    position: absolute;
+    
+    width: 200px;
+    height: 50px;
+    z-index: 6;
+    bottom: 10px;
+    right: 20px;
+}
+.point{
+    list-style: none;
+}
+.pointitem{
+    box-sizing: border-box;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #616161;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.pointitem.active{
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.pointitem:hover{
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+#goPro{
+    background: url(../image/icon-slides.png) no-repeat -84px 50%;
+}
+#goPro:hover{
+    background: url(../image/icon-slides.png) no-repeat -0px 50%;
+}
+#goNext{
+    background: url(../image/icon-slides.png) no-repeat -124px 50%;
+}
+#goNext:hover{
+    background: url(../image/icon-slides.png) no-repeat -42px 50%;
+}
+.m1-2{
+    width: 1300px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+.m2-1{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content:space-between;
+    padding: 0 100px;
+}
+.m2-1-1{
+    width: 450px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.m2-1-2{
+    width: 450px;
+    height: 400px;
+}
+.m3{
+    margin: 0 20px;
+}
+.m3-1-img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* 商品 */
+.shop{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shop-head{
+    margin-bottom: 40px;
+}
+.shop-a{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shop-b{
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    position: relative;
+    width: 1200px;
+}
+.shop-c{
+    width: 200px;
+    height: 280px;
+    margin: 20px 20px;
+    text-align: center;
+    transition: 1s;
+}
+.shop-img{
+    width: 150px;
+    height: 200px;
+}
+
+.shop-c:hover{
+    
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+.serve{
+    width: 1200px;
+    margin: 0 auto;
+}
+.serve-content{
+    padding:50px;
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.serve-chunk{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content:center;
+}
+.serve-text{
+    width: 300px;;
+    text-align: center;
+}
+.serve-logo{
+    text-align: center;
+    width: 100px;
+}
+.serve-img{
+    width: 50px;
+    height: 50px;
+}
+.serve span{
+    font-size: 12px;
+}
